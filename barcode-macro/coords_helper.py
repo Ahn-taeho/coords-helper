@@ -1,1 +1,1 @@
-remove coords_helper.py
+delete coords_helper.py
