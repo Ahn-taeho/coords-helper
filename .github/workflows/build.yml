@@ -1,4 +1,3 @@
-
 name: Build EXE
 
 on:
@@ -27,7 +26,7 @@ jobs:
           pyinstaller --onefile --noconsole coords_helper.py
 
       - name: Upload EXE
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3.1.3
         with:
           name: coords_helper_exe
           path: dist/coords_helper.exe
