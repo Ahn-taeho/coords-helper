@@ -23,10 +23,10 @@ jobs:
 
       - name: Build EXE
         run: |
-          pyinstaller --onefile --noconsole barcode-macro/coords_helper.py
+          pyinstaller --onefile --noconsole barcode-macro/coords_helper_gui.py
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
         with:
-          name: coords_helper_exe
-          path: dist/coords_helper.exe
+          name: coords_helper_gui_exe
+          path: dist/coords_helper_gui.exe
